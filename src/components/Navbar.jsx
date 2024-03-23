@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { motion } from 'framer-motion'
 
 export default function Navbar(props) {
   
@@ -15,13 +16,13 @@ export default function Navbar(props) {
   },[])
 
   return (
-    <div id='navbar'>
+    <motion.div id='navbar' initial={{opacity: 0}} animate={{opacity:1}}>
             <h1 id='name'><Link to="/">Akhil Pendyala</Link></h1>
             <ul id='items'>
                 <li id='about'><Link to="/about">About</Link></li>
                 <li id='projects'><Link to="/projects">Projects</Link></li>
-                <li id='artwork'><Link to="/artwork">Artwork</Link></li>
+                <li id='artwork'><Link to="/">Artwork</Link></li>
             </ul>
-    </div>
+    </motion.div>
   )
 }

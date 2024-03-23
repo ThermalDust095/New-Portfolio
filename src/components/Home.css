@@ -26,6 +26,12 @@ body{
 
 .blue-a{
     color: #00FFFF;
+    position: relative;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 9.9px;
 }
 
 .mid-text-1{
@@ -43,10 +49,10 @@ body{
 
 .mid-text-2{
     width: 812px;
-    height: 124px;
     flex-shrink: 0;
     color: #00E0FF;
     font-family: Handjet;
+    text-align: left;
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -61,4 +67,6 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
 

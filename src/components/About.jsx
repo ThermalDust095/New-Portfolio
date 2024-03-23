@@ -1,6 +1,7 @@
 import React,{useRef, useState, useEffect} from 'react'
 import Navbar from './Navbar'
 import './About.css'
+import { motion } from 'framer-motion'
 
 export default function About(props) {
 
