@@ -1,0 +1,50 @@
+#pjct{
+    width: 23.698vw;
+    height: 34.83vh;
+    flex-shrink: 0;
+    border: 1px solid #0FF;
+    background: #090C17;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    cursor: grab;
+}
+
+#pjct:active{
+    cursor: grabbing;
+}
+
+#line{
+    stroke-width: 1px;
+    stroke: #0FF;
+}
+
+#abt-pjct{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+#pjct-name{
+    color: #FFF;
+    font-family: Sis;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#pjct-desc{
+    color: #FFF;
+    font-family: Handjet;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+}

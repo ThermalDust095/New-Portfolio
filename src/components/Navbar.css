@@ -1,9 +1,8 @@
 /* Header */
 
 #navbar{
-    position: absolute;
+    position: relative;
     display: flex;
-    height: 9.524vh;
     padding: 34px 51px 34px 51px;
     gap: 30.729vw;
 }

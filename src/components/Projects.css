@@ -1,0 +1,30 @@
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    background: #010410;
+}
+
+#root{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#project-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+#projects-div{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+

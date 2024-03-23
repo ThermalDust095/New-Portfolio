@@ -10,30 +10,30 @@ body{
     background: #010410;
 } */
 
-h1{
+#output-div h1{
     color: #FFF;
-font-family: Handjet;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Handjet;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-h1:hover{
+#output-div h1:hover{
     cursor: pointer;
 }
 
-h2{
+#output-div h2{
     color: #FFF;
-font-family: Handjet;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-transition: 0.1s;
+    font-family: Handjet;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.1s;
 }
 
-h2:hover{
+#output-div h2:hover{
     color: #00FFFF;
     cursor: pointer;
 }
@@ -63,6 +63,7 @@ h2:hover{
     font-weight: 400;
     line-height: normal;
     transition: 0.125s;
+    list-style-type: decimal;
 }
 
 #code-div li:hover{

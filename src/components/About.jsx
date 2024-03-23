@@ -2,6 +2,7 @@ import React,{useRef, useState, useEffect} from 'react'
 import Navbar from './Navbar'
 import './About.css'
 import { motion } from 'framer-motion'
+import { ReactTyped } from "react-typed";
 
 export default function About(props) {
 
@@ -42,7 +43,7 @@ export default function About(props) {
       <div id='code-div'>
         <ol>
           { data.map((val, idx) => (
-            <li key={idx}>{val}</li>
+            <><li key={idx}>{val}</li></>
           )) }
         </ol>
       </div>
