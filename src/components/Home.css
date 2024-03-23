@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Madimi+One&display=swap');
+
+@font-face {
+    font-family: 'sis';
+    src: url('../assets/fonts/Sis-JpRJm.ttf') format('truetype');
+    /* You can also include additional font formats for better compatibility */
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    min-width: 100vh;
+}
+
+#background{
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/bg.png");
+    background-size: cover;
+}
+
+.blue-a{
+    color: #00FFFF;
+}
+
+.mid-text-1{
+    position: relative;
+    width: 799px;
+    height: 129px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Handjet;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mid-text-2{
+    width: 812px;
+    height: 124px;
+    flex-shrink: 0;
+    color: #00E0FF;
+    font-family: Handjet;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#rem-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,98 @@
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    background: #010410;
+}
+
+/* #about-page{
+    min-width: 100%;
+    min-height: 100vh;
+    background: #010410;
+} */
+
+h1{
+    color: #FFF;
+font-family: Handjet;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+h2{
+    color: #FFF;
+font-family: Handjet;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: 0.1s;
+}
+
+h2:hover{
+    color: #00FFFF;
+    cursor: pointer;
+}
+
+#code-div{
+    width: 54.948vw;
+    height: 82.177vh;
+    flex-shrink: 0;
+    position: absolute;
+    top: 16.463vh;
+    left: 3.8vw;
+}
+
+#code-div ul{
+    width: 54.948vw;
+    height: 82.177vh;
+    flex-shrink: 0;
+    color: aliceblue;
+
+}
+
+#code-div li{
+    color: rgba(255, 255, 255, 0.53);
+    font-family: Handjet;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.125s;
+}
+
+#code-div li:hover{
+    background: rgba(217, 217, 217, 0.13);;
+}
+
+.blue{
+    color: #00FFFF;
+}
+
+.org{
+    color: #F15700;
+}
+
+#output-div{
+    width: 36.458vw;
+    height: 57.415vh;
+    flex-shrink: 0;
+    position: absolute;
+    top: 23.537vh;
+    right: 3.711vw;
+    background: rgba(255, 255, 255, 0.09);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#line{
+    position: relative;
+    top: 2.707vh;
+}

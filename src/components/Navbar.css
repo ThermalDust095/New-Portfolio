@@ -1,0 +1,45 @@
+/* Header */
+
+#navbar{
+    position: absolute;
+    display: flex;
+    height: 9.524vh;
+    padding: 34px 51px 34px 51px;
+    gap: 30.729vw;
+}
+
+#name:hover{
+    cursor: pointer;
+}
+
+#name{
+    color: white;
+    font-family: 'sis';
+    font-weight: 400;
+    font-size: 48px;
+}
+
+#items{
+    display: flex;
+    gap: 3.255vw;
+
+}
+
+#items li{
+    color: white;
+    list-style: none;
+    font-family: 'sis';
+    font-weight: 400;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+#items li:hover{
+    color: #0ff; 
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }
