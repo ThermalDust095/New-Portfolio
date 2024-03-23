@@ -2,6 +2,7 @@ body{
     min-width: 100%;
     min-height: 100vh;
     background: #010410;
+    overflow: hidden;
 }
 
 #root{

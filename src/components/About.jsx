@@ -17,7 +17,7 @@ export default function About(props) {
   <a> <a className='blue'>“Technologies” </a>: <a className='org'>[“React”, “Flask”,”Tensorflow”],“Languages” : [“Python”, “Javascript”, “C++”, “R”, “Java”, “C#”, “HTML”, “CSS”, “MySQL”]</a></a>,
   <a> <a className='blue'>“Miscelaneous” </a>: <a className='org'>[“video-editing”, “3D-Designing”]</a></a>,
   "}",
-  <a><a className='blue'>“Interests” </a>: <a className='org'>[“Technology”, “GeoPolitics”,”IndianPolitics”,”Comedy”, “Movies”, “WebSeries”, “Sitcoms”]</a></a>,
+  <a><a className='blue'>“Interests” </a>: <a className='org'>[“Technology”, “GeoPolitics”,”IndianPolitics”,”Comedy”, “Movies”, “WebSeries”, “Sitcoms”,“Chess”]</a></a>,
   "}"]
 
   const [hasClicked, setClicked] = useState(false)
