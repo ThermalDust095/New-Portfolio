@@ -51,7 +51,7 @@ export default function About(props) {
       <div id='output-div'>
         <div>
         <h1 onClick={(e) => handleHClick(e)}>{hasClicked ? "Go back" : "Select an option"}</h1>
-          <svg width="36.393vw" height="1" viewBox="0 0 559 1" fill="none" xmlns="http://www.w3.org/2000/svg" id='line'>
+          <svg width="100%" height="1" viewBox="0 0 559 1" fill="none" xmlns="http://www.w3.org/2000/svg" id='line'>
           <line y1="0.5" x2="650" y2="0.5" stroke="#00FFFF"/>
           </svg>
         </div>

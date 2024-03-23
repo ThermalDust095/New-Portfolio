@@ -8,7 +8,7 @@ export default function Projects() {
     <div id='project-page'>
       <Navbar page="projects"/>
       <div id='projects-div'>
-        <ProjectElem />
+        <ProjectElem name="Chess Analyzer" desc="it is a cool "/>
         <ProjectElem />
         <ProjectElem />
         <ProjectElem />
