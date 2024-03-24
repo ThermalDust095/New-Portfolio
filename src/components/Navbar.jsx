@@ -33,6 +33,7 @@ export default function Navbar(props) {
                 <li id='projects'><Link to="/projects">Projects</Link></li>
                 <li id='artwork'><Link to="/">Artwork</Link></li>
             </ul>
+            <></>
     </motion.div>
   )
 }

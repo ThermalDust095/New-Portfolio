@@ -97,3 +97,32 @@ body{
     position: relative;
     top: 2.707vh;
 }
+
+@media screen and (max-width: 768px){
+
+    #about-page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #output-div{
+        display: none;
+    }
+
+    #code-div{
+        width: 87.136vw;
+        height: 60.109vh;
+        flex-shrink: 0;
+        position: relative;
+        top: 0;
+        left: 3px;
+    }
+    
+
+    #code-div li{
+        font-size: 24px;
+    }
+
+}

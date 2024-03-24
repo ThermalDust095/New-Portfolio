@@ -54,3 +54,25 @@
     width: 100%;
     overflow: hidden;
 }
+
+@media screen and (max-width: 768px){
+
+    #pjct{
+        width: 39.806vw;
+        height: 18.47vh;
+        flex-shrink: 0;
+    }
+
+    #pjct-name{
+        font-size: 18px;
+    }
+
+    #pjct-desc{
+        font-size: 10px;
+    }
+
+    #line{
+        top: 1.2vh;
+        stroke-width: 2px;
+    }
+}

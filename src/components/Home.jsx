@@ -16,6 +16,20 @@ const list = [
 
 export default function Home(props) {
   const [ currItem, setCurrItem ] = useState(list[0]);  
+
+  const [isLoading , setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);  
+
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
     <div id='background'>

@@ -42,3 +42,30 @@ a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit color from parent */
   }
+
+
+  @media only screen and (max-width: 767px){
+
+    body{
+        overflow: hidden;
+    }
+
+    #items{
+        display: none;
+    }
+
+    #navbar{
+        align-items: center;
+    }
+
+    #name{
+        color: #FFF;
+        text-align: center;
+        font-family: Sis;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+  }
+  
