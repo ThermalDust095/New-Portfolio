@@ -14,7 +14,8 @@ export default function About(props) {
   <a><a className='blue'>“Name”</a> : <a className='org'>“Akhil Pendyala”</a>,
   </a>,<a><a className='blue'>“Description”</a>: <a className='org'>“I am an Enthusiastic Programmer, looking to learn and build as many  interesting and unique projects possible”</a>,</a>,
   sk_elem,
-  <a> <a className='blue'>“Technologies” </a>: <a className='org'>[“React”, “Flask”,”Tensorflow”],“Languages” : [“Python”, “Javascript”, “C++”, “R”, “Java”, “C#”, “HTML”, “CSS”, “MySQL”]</a></a>,
+  <a> <a className='blue'>“Technologies” </a>: <a className='org'>[“React”, “Flask”,”Tensorflow”]</a>,</a>,
+  <a><a className='blue'>“Languages”</a> : <a className='org'>[“Python”, “Javascript”, “C++”, “R”, “Java”, “C#”, “HTML”, “CSS”, “MySQL”]</a></a>,
   <a> <a className='blue'>“Miscelaneous” </a>: <a className='org'>[“video-editing”, “3D-Designing”]</a></a>,
   "}",
   <a><a className='blue'>“Interests” </a>: <a className='org'>[“Technology”, “GeoPolitics”,”IndianPolitics”,”Comedy”, “Movies”, “WebSeries”, “Sitcoms”,“Chess”]</a></a>,
@@ -24,7 +25,10 @@ export default function About(props) {
   const [opt, setOpt] = useState("")
 
   const values = {
-    "name": "Hi, My name is Akhil Pendyala, I like to blah blah blah"
+    "me": "Hi, My name is Akhil Pendyala, I like to enlarge my knowledge about the Computer Science field and learn technologies that are changing the world right now. I percieve myself to also be passionate about various other fields such as Chess, Geo-Poltics, Cinema, Post World War History",
+    "social":<><h2><a href='https://www.instagram.com/imakhilpendyala/' target='__blank'>Instagram</a></h2><h2><a href='https://github.com/ThermalDust095/' target='__blank'>Github</a></h2><h2><a href='https://www.linkedin.com/in/akhil-pendyala-0380a71a6/' target='__blank'>LinkedIn</a></h2><h2><a href='https://twitter.com/ImAkhilPendyala' target='__blank'>Twitter/X</a></h2></>,
+    "skills":<a style={{fontSize: "24px"}}>I believe to specialize myself with most of the high level languages like Python, Java, Javascript. While knowing the building blocks of backend and front end frameworks along with SQL. I have also worked on neural networks with the Tensorflow framework, I am increasingly interested in the Field of Neural Networks, and currently am looking for any opportunity to learn Machine Learning suitable for industrial standards</a>,
+    "achievements":<ul style={{fontSize: "26px", display: "flex", flexDirection:"column",gap:"10px"}}><li>Winning 1st place at a 24-Hr Hackathon at Global Academy of Technology, Bangalore</li><li>Co-Hosting a College Event "Capture-The_Flag" to introduce a new concept of competition to the college atmosphere</li><li>Coming Top 25 in Inter College "DSI-Codeathon" organized by Neopat</li><li>Winning Smaller College Technical Events such as "CascadingCrafts" hosted by CSEDSATM</li></ul>
   }
 
   const handleClick = (e, opt) => {
@@ -56,10 +60,10 @@ export default function About(props) {
           </svg>
         </div>
         <div>
-          {hasClicked ? <h2>{values[opt]}</h2> : <><h2 onClick={(e) => handleClick(e,"name")}>Name</h2>
-          <h2 onClick={(e) => handleClick(e,"description")}>Descripton</h2>
+          {hasClicked ? <h2>{values[opt]}</h2> : <><h2 onClick={(e) => handleClick(e,"me")}>About Me</h2>
+          <h2 onClick={(e) => handleClick(e,"social")}>Social</h2>
           <h2 onClick={(e) => handleClick(e,"skills")}>Skills</h2>
-          <h2 onClick={(e) => handleClick(e,"interests")}>Interests</h2></>}
+          <h2 onClick={(e) => handleClick(e,"achievements")}>Achievements</h2></>}
         </div>
       </div>
     </div>
