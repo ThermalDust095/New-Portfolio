@@ -11,7 +11,7 @@ export default function About(props) {
   const sk_elem = <><a className='blue'>{sk}</a>:<a>{sk_k}</a></>
 
   const data = [<a>//about.json</a>,"{",
-  <a><a className='blue'>“Name”</a> : <a className='org'>“Akhil Pendyala”</a>,
+  <a><a className='blue'>“Name”</a> : <a className='org'>“Akhil Pendyala aka ThermalDust095”</a>,
   </a>,<a><a className='blue'>“Description”</a>: <a className='org'>“I am an Enthusiastic Programmer, looking to learn and build as many  interesting and unique projects possible”</a>,</a>,
   sk_elem,
   <a> <a className='blue'>“Technologies” </a>: <a className='org'>[“React”, “Flask”,”Tensorflow”]</a>,</a>,
