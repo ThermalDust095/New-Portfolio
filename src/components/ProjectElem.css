@@ -59,12 +59,12 @@
 
     #pjct{
         width: 39.806vw;
-        height: 18.47vh;
+        height: 19.47vh;
         flex-shrink: 0;
     }
 
     #pjct-name{
-        font-size: 4.369vw;
+        font-size: 3.398vw;
     }
 
     #pjct-desc{

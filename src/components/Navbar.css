@@ -70,10 +70,11 @@ a {
         color: #FFF;
         text-align: center;
         font-family: Sis;
-        font-size: 40px;
+        font-size: 35px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        width: 60%;
     }
 
     
