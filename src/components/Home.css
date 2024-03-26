@@ -72,35 +72,42 @@ body{
 @media screen and (max-width: 768px){
 
     .blue-a{
-        padding: 0px 9.5px 0px 9.5px;
+        height: 20px;
+        width: 20px;
     }
 
+    #rem-page{
+        gap: 43px;
+    }
+    
     .mid-text-1{
         color: #FFF;
         text-align: center;
         font-family: Handjet;
-        font-size: 32px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        width: 53.155vw;
+        width: 108.252vw;
         height: 11.366vh;
+        flex-direction: column;
     }
 
     .mid-text-1 h1{
-        margin-left: 97px;
-        margin-right: 96px;
+        margin-left: 23.544vw;
+        margin-right: 23.544vw;
     }
 
     .mid-text-2{
-        width: 293px;
+        width: 56.553vw;
         flex-shrink: 0;
         color: #00E0FF;
         font-family: Handjet;
-        font-size: 32px;
+        font-size: 7.767vw;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+        text-align: center;
     }
 }
 

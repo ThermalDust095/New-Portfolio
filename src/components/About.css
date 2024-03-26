@@ -118,6 +118,11 @@ body{
         flex-direction: column;
     }
 
+    #rem-page{
+        justify-content: start;
+        margin-top: 40%;
+    }
+
     #output-div{
         display: none;
     }

@@ -6,3 +6,10 @@
     background: #00ffffc5;
     color: #fff;
 }
+
+@media screen and (max-width: 768px){
+
+    body{
+        max-height: 100vh;
+    }
+}

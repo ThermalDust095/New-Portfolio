@@ -64,11 +64,14 @@
     }
 
     #pjct-name{
-        font-size: 18px;
+        font-size: 4.369vw;
     }
 
     #pjct-desc{
-        font-size: 10px;
+        font-size: 16px;
+        padding: 0px 1.214vw 1.214vw 1.214vw;
+        font-size: 2.427vw;
+        overflow: hidden;
     }
 
     #line{
