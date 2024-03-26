@@ -19,13 +19,12 @@ export default function Navbar(props) {
     if(mnav){
       itemsRef.current.style = "display: flex"
       navbarRef.current.style = "height: 100vh"
-      navbarRef.current.style = "background: #000"
+      // navbarRef.current.style = "background: #000"
     }
 
     if(!mnav){
       itemsRef.current.style = "display: none"
       navbarRef.current.style = "height: 17.749vh"
-      navbarRef.current.style = "background: transparent"
     }
 
   }
@@ -51,7 +50,7 @@ export default function Navbar(props) {
 
   if(mWindow){
     return(
-      <div div id='navbar' ref={navbarRef} style={{zIndex: 5, height: "17.749vh", background: "transparent"}}>
+      <div div id='navbar' ref={navbarRef} style={{zIndex: 5, height: "17.749vh"}}>
         <h1 id='name' onClick={(e) => handleMclick(e)}>Akhil Pendyala</h1>
         <ul id='items' ref={itemsRef} style={{display: "none"}}>
                 <li id='home'><Link to="/">Home</Link></li>
