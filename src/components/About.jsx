@@ -26,7 +26,7 @@ export default function About(props) {
 
   const values = {
     "me": <a style={{fontSize: "3.537vh"}}>Hi, My name is Akhil Pendyala, I like to enlarge my knowledge about the Computer Science field and learn technologies that are changing the world right now. I percieve myself to also be passionate about various other fields such as Chess, Geo-Poltics, Cinema, Post World War History</a>,
-    "social":<><h2><a href='https://www.instagram.com/imakhilpendyala/' target='__blank'>Instagram</a></h2><h2><a href='https://github.com/ThermalDust095/' target='__blank'>Github</a></h2><h2><a href='https://www.linkedin.com/in/akhil-pendyala-0380a71a6/' target='__blank'>LinkedIn</a></h2><h2><a href='https://twitter.com/ImAkhilPendyala' target='__blank'>Twitter/X</a></h2></>,
+    "social":<><h2 className='options'><a href='https://www.instagram.com/imakhilpendyala/' target='__blank'>Instagram</a></h2><h2  className='options'><a href='https://github.com/ThermalDust095/' target='__blank'>Github</a></h2><h2 className='options'><a href='https://www.linkedin.com/in/akhil-pendyala-0380a71a6/' target='__blank'>LinkedIn</a></h2><h2  className='options'><a href='https://twitter.com/ImAkhilPendyala' target='__blank'>Twitter/X</a></h2></>,
     "skills":<a style={{fontSize: "3.537vh"}}>I believe to specialize myself with most of the high level languages like Python, Java, Javascript. While knowing the building blocks of backend and front end frameworks along with SQL. I have also worked on neural networks with the Tensorflow framework, I am increasingly interested in the Field of Neural Networks, and currently am looking for any opportunity to learn Machine Learning suitable for industrial standards</a>,
     "achievements":<ul style={{fontSize: "3.537vh", display: "flex", flexDirection:"column",gap:"10px"}}><li>Winning 1st place at a 24-Hr Hackathon at Global Academy of Technology, Bangalore</li><li>Co-Hosting a College Event "Capture-The_Flag" to introduce a new concept of competition to the college atmosphere</li><li>Coming Top 25 in Inter College "DSI-Codeathon" organized by Neopat</li><li>Winning Smaller College Technical Events such as "CascadingCrafts" hosted by CSEDSATM</li></ul>
   }
@@ -60,10 +60,10 @@ export default function About(props) {
           </svg>
         </div>
         <div>
-          {hasClicked ? <h2>{values[opt]}</h2> : <><h2 onClick={(e) => handleClick(e,"me")}>About Me</h2>
-          <h2 onClick={(e) => handleClick(e,"social")}>Social</h2>
-          <h2 onClick={(e) => handleClick(e,"skills")}>Skills</h2>
-          <h2 onClick={(e) => handleClick(e,"achievements")}>Achievements</h2></>}
+          {hasClicked ? <h2 className='just-text'>{values[opt]}</h2> : <><h2 onClick={(e) => handleClick(e,"me")} className='options'>About Me</h2>
+          <h2 onClick={(e) => handleClick(e,"social")} className='options'>Social</h2>
+          <h2 onClick={(e) => handleClick(e,"skills")} className='options'>Skills</h2>
+          <h2 onClick={(e) => handleClick(e,"achievements")} className='options'>Achievements</h2></>}
         </div>
       </div>
     </div>

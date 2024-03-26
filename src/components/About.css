@@ -23,7 +23,7 @@ body{
     cursor: pointer;
 }
 
-#output-div h2{
+.options{
     color: #FFF;
     font-family: Handjet;
     font-size: 36px;
@@ -33,7 +33,17 @@ body{
     transition: 0.1s;
 }
 
-#output-div h2:hover{
+.just-text{
+    color: #FFF;
+    font-family: Handjet;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.1s;
+}
+
+.options:hover{
     color: #00FFFF;
     cursor: pointer;
 }
