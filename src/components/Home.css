@@ -72,7 +72,8 @@ body{
 @media screen and (max-width: 768px){
 
     #background{
-        background-color: #010410;
+        background: url("../assets/bg_mobile.png");
+        background-size: cover;
     }
 
     .blue-a{
