@@ -129,12 +129,11 @@ body{
     }
 
     #code-div{
-        width: 87.136vw;
-        height: 60.109vh;
+        width: 80%;
         flex-shrink: 0;
         position: relative;
         top: 0;
-        left: 1.214vw;
+        left: 2.14vw;
     }
     
 

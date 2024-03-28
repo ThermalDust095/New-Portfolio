@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./ProjectElem.css"
 import Draggable from 'react-draggable'
 
 export default function ProjectElem(props) {
+
+  const [mWindow, setMwindow] = useState(false)
+
+  useEffect(() => {
+    if(window.innerWidth <= 768){
+      setMwindow(true)
+    }
+  }, [])
+
   return (
-    <Draggable>
+    <Draggable disabled={mWindow ? true : false}>
       <div id='pjct'>
           <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 364 3" fill="none" id='line' style={{top:"1.2vh"}}>

@@ -17,6 +17,7 @@ export default function Navbar(props) {
     setmnav(!mnav)
 
     if(mnav){
+      
       itemsRef.current.style = "display: flex"
       navbarRef.current.style = "height: 100vh"
       // navbarRef.current.style = "background: #000"

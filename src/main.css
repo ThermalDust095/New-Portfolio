@@ -7,9 +7,8 @@
     color: #fff;
 }
 
-/* @media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px) {
     body{
-        max-height: 100vh;
+        overflow: scroll;
     }
-} */
+}

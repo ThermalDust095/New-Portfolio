@@ -58,20 +58,20 @@
 @media screen and (max-width: 768px){
 
     #pjct{
-        width: 39.806vw;
-        height: 19.47vh;
+        width: 59.806vw;
+        height: 29.47vh;
         flex-shrink: 0;
     }
 
     #pjct-name{
-        font-size: 3.398vw;
+        font-size: 6.398vw;
         font-weight: 500;
     }
 
     #pjct-desc{
         font-size: 16px;
-        padding: 0px 1.214vw 1.214vw 1.214vw;
-        font-size: 2.427vw;
+        padding: 0px 2.214vw 2.214vw 2.214vw;
+        font-size: 4.427vw;
         overflow: hidden;
     }
 
