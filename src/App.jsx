@@ -9,9 +9,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    setTimeout(async() => {
+      await document.fonts.load('16px "sis"')
+      await document.fonts.load('16px "Handjet"')
       setIsLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   if(isLoading){
