@@ -1,11 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Home from './components/Home'
 import Projects from './components/Projects'
 import About from './components/About';
+import Loading from './components/Loading';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  if(isLoading){
+    return (<Loading/>)
+  }
+
 
   return (
     <BrowserRouter>

@@ -1,0 +1,13 @@
+#loading-div{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading-name{
+    font-family: Handjet;
+    font-size: 8.919vw;
+    color: white;
+}
