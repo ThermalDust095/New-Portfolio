@@ -8,21 +8,24 @@ export default function About(props) {
 
   const sk= "“Skills”"
   const sk_k = "  \{"
-  const sk_elem = <><a className='blue'>{sk}</a>:<a>{sk_k}</a></>
+  const sk_elem = `<a className='blue' style='color:#00FFFF'>${sk}</a>:<a>${sk_k}</a>`
 
-  const data = [<a>//about.json</a>,"{",
-  <a><a className='blue'>“Name”</a> : <a className='org'>“Akhil Pendyala”</a>,
-  </a>,<a><a className='blue'>“Description”</a>: <a className='org'>“I am an Enthusiastic Programmer, looking to learn and build as many  interesting and unique projects possible”</a>,</a>,
+  const data = ["<a>//about.json</a>","{",
+  "<a><a className='blue' style='color:#00FFFF'>“Name”</a> : <a className='org' style='color:#F15700'>“Akhil Pendyala”</a>",
+  "</a>,<a><a className='blue' style='color:#00FFFF'>“Description”</a>: <a className='org' style='color:#F15700'>“I am an Enthusiastic Programmer, looking to learn and build as many  interesting and unique projects possible”</a>,</a>",
   sk_elem,
-  <a> <a className='blue'>“Technologies” </a>: <a className='org'>[“React”, “Flask”,”Tensorflow”]</a>,</a>,
-  <a><a className='blue'>“Languages”</a> : <a className='org'>[“Python”, “Javascript”, “C++”, “R”, “Java”, “C#”, “HTML”, “CSS”, “MySQL”]</a></a>,
-  <a> <a className='blue'>“Miscelaneous” </a>: <a className='org'>[“video-editing”, “3D-Designing”]</a></a>,
+  "<a> <a className='blue' style='color:#00FFFF'>“Technologies” </a>: <a className='org' style='color:#F15700'>[“React”, “Flask”,”Tensorflow”]</a>,</a>",
+  "<a><a className='blue' style='color:#00FFFF'>“Languages”</a> : <a className='org' style='color:#F15700'>[“Python”, “Javascript”, “C++”, “R”, “Java”, “C#”, “HTML”, “CSS”, “MySQL”]</a></a>",
+  "<a> <a className='blue' style='color:#00FFFF'>“Miscelaneous” </a>: <a className='org' style='color:#F15700'>[“video-editing”, “3D-Designing”]</a></a>",
   "}",
-  <a><a className='blue'>“Interests” </a>: <a className='org'>[“Technology”, “GeoPolitics”,”IndianPolitics”,”Comedy”, “Movies”, “WebSeries”, “Sitcoms”,“Chess”]</a></a>,
+  "<a><a className='blue' style='color:#00FFFF'>“Interests” </a>: <a className='org' style='color:#F15700'>[“Technology”, “GeoPolitics”,”IndianPolitics”,”Comedy”, “Movies”, “WebSeries”, “Sitcoms”,“Chess”]</a></a>",
   "}"]
 
   const [hasClicked, setClicked] = useState(false)
   const [opt, setOpt] = useState("")
+  const code = useRef()
+
+  
 
   const values = {
     "me": <a style={{fontSize: "3.537vh"}}>Hi, My name is Akhil Pendyala, I like to enlarge my knowledge about the Computer Science field and learn technologies that are changing the world right now. I percieve myself to also be passionate about various other fields such as Chess, Geo-Poltics, Cinema, Post World War History</a>,
@@ -33,6 +36,7 @@ export default function About(props) {
 
   const handleClick = (e, opt) => {
     console.log("hi",opt, values[opt])
+    console.log(code.current)
     setOpt(opt)
     setClicked(true)
   }
@@ -44,15 +48,15 @@ export default function About(props) {
   return (
     <div id='about-page'>
     <Navbar page="about"/>
-      <div id='code-div'>
+      <div id='code-div' ref={code}>
         <ol>
           { data.map((val, idx) => (
-            <><li key={idx}>{val}</li></>
+            <><motion.li key={idx} initial={{opacity: 0}} animate={{ opacity: 1}} transition={{delay: 0.2*idx, duration: 2}} ><ReactTyped strings={[`${val}`]} typeSpeed={10} startWhenVisible contentType='html' showCursor={false} key={idx} startDelay={500*idx}/></motion.li></>
           )) }
         </ol>
       </div>
 
-      <div id='output-div'>
+      <motion.div id='output-div' initial={{opacity: 1, scaleY: 0, y:-50}} animate={{opacity: 1, scaleY: 1, y:0}} transition={{delay: 3, duration: 0.1}}>
         <div>
         <h1 onClick={(e) => handleHClick(e)}>{hasClicked ? "Go back" : "Select an option"}</h1>
           <svg width="100%" height="1" viewBox="0 0 559 1" fill="none" xmlns="http://www.w3.org/2000/svg" id='line'>
@@ -65,7 +69,7 @@ export default function About(props) {
           <h2 onClick={(e) => handleClick(e,"skills")} className='options'>Skills</h2>
           <h2 onClick={(e) => handleClick(e,"achievements")} className='options'>Achievements</h2></>}
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
