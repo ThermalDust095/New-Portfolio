@@ -2,12 +2,12 @@
     "redirects": [
         {
             "source": "/about",
-            "destination": "/about",
+            "destination": "/",
             "permanent": true
         },
         {
             "source": "/projects",
-            "destination": "/projects",
+            "destination": "/",
             "permanent": true
         }
     ]
